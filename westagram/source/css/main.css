@@ -171,6 +171,7 @@ article {
   width: 1.8em;
   height: 1.6em;
   margin-left:auto;
+  cursor: pointer;
 }
 
 .article-like-user {
@@ -182,6 +183,7 @@ article {
 .article-like-user-icon {
   width:1.5em;
   margin-right:0.5em;
+  cursor: pointer;
 }
 
 /* 이름정보 텍스트에 사용할 span */
@@ -439,6 +441,7 @@ button:focus {outline:none;}
   color: #0095f6;
   font-size: 0.75em;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .main-right-info {

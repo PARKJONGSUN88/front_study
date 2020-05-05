@@ -22,6 +22,7 @@
   
 .instargramlogo{
   width:50%;
+  cursor: pointer;
 }
 
 .idpass-div {
@@ -56,7 +57,8 @@ button {
 }
 
 .afterbutton {
-  background-color:rgba(var(--d69,0,149,246),1);  
+  background-color:rgba(var(--d69,0,149,246),1);
+  cursor: pointer;  
 }
 
 .info-div {
@@ -67,4 +69,5 @@ button {
   color:rgba(var(--d69,0,149,246),1);
   font-size: 0.8em;
   font-weight: bold;
+  cursor: pointer;
 }
