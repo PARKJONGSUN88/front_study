@@ -236,6 +236,8 @@ article {
 input:focus {outline:none;}
 button:focus {outline:none;}
 
+
+
 .submitButton {
   color:rgba(var(--d69,0,149,246),.3);
   background-color: white;
@@ -243,6 +245,7 @@ button:focus {outline:none;}
   font-size:0.9em;
   font-weight: bold;
 }
+
 
 /* 스크립트에서 setAttribute로 만든 클래스임 */
 .clickbutton {
@@ -253,6 +256,10 @@ button:focus {outline:none;}
   font-size:0.9em;
   font-weight: bold;  
 }
+
+
+
+
 
 /* 우측메뉴 */
 .main-right {
