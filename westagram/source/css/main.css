@@ -118,11 +118,7 @@ article {
   width:1.5em;
 }
 
-.article-center-div {
-  width:100%;
-}
-
-.article-center-div-img {
+.article-center-div, .article-center-div-img {
   width:100%;
 }
 
@@ -236,8 +232,6 @@ article {
 input:focus {outline:none;}
 button:focus {outline:none;}
 
-
-
 .submitButton {
   color:rgba(var(--d69,0,149,246),.3);
   background-color: white;
@@ -246,8 +240,10 @@ button:focus {outline:none;}
   font-weight: bold;
 }
 
+/* 스크립트에서 classList.add로 추가될 클래스임 */
+/* 중요한 점은 위에 같은 기능이 있는데 아래 추가될 코드가 아레에 있어 중복되면 아래만 실행됨 */
+/* 즉, 이벤트 실행 후 위의 코드가 아래 코드로 변경됨! */
 
-/* 스크립트에서 setAttribute로 만든 클래스임 */
 .clickbutton {
   color:rgba(var(--d69,0,149,246),1);
   cursor: pointer;  
@@ -257,12 +253,10 @@ button:focus {outline:none;}
   font-weight: bold;  
 }
 
-
-
-
-
 /* 우측메뉴 */
 .main-right {
+  position:sticky;
+  top:5em;
   display:flex; 
   align-items: center;
   justify-content:center;
@@ -455,6 +449,7 @@ button:focus {outline:none;}
   width: 100%;
   height: 6em;
 }
+
 /* 인포에서 사용할 span */
 .span-info {
   display:block;
