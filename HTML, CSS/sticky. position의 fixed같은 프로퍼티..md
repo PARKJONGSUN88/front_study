@@ -1,6 +1,4 @@
-### sticky. position의 fixed같은 프로퍼티.
-
-
+## sticky. position의 fixed같은 프로퍼티.
 
 div를 고정시키고자 한다면 자주 쓰던 position:fixed가 있다.
 
@@ -13,6 +11,8 @@ div를 고정시키고자 한다면 자주 쓰던 position:fixed가 있다.
  
 
 flex를 하다보니 fixed로 하기에 맞지 않아 sticky를 적용한 내 코드 
+
+**flex로 div를 배치하다가 보니 fix로는 해결이 안되었다...**
 
 ```css
 .main-right {
@@ -32,6 +32,8 @@ flex를 하다보니 fixed로 하기에 맞지 않아 sticky를 적용한 내 �
 fixed는 부모요소의 relative, fixed를 기준으로 하지만 sticky는 그런거 없이 
 
 **그 요소만 딱! 스티커처럼 달라붙어 고정된다~~**
+
+
 
 
 
