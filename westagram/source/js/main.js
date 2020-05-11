@@ -29,11 +29,13 @@ function commentWrite() {
 /* 게시 버튼 클릭 시 댓글함수 실행 */
 submitButtonClick.addEventListener("click", function() {
     commentWrite();
+    commentDone.value = " ";
 });
 
 /* 엔터키 눌렸을 때 댓글함수 실행 */
 commentDone.addEventListener('keydown', function(e) {    
     if (e.keyCode === 13 ) {
         commentWrite();
+        commentDone.value = " ";      
     }
 })
