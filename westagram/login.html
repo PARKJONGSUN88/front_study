@@ -8,23 +8,54 @@
 <link rel="stylesheet" type="text/css" href="source/css/common.css">
 </head>
 <body>
-  <div class="body-contents-div">
-    <div class="body-contents-inner-div">        
-      <div class="logo-div">
-        <img src="source/img/instagramtext.png" alt="logo" class="instargramlogo">
-      </div>          
-      <div class="idpass-div">
-        <div class="idpass-div-inner">
+  <main>
+    <div class="body-left">
+      <img src="source/img/backgroundPhone.png" alt="phone">
+      <!-- 작업중 -->
+      <div class="test">
+        <img src="source/img/sample1.jpg" alt="sample" class="sample">
+      </div>
+      <!-- 작업중 -->
+    </div>
+    <div class="body-right">
+      <div class="body-right-first">
+        <div class="logo-div">
+          <img src="source/img/instagramtext.png" alt="logo">
+        </div>          
+        <div class="idpass-div">      
           <input type="text" id="userid" placeholder="  전화번호, 사용자 이름 또는 이메일">
           <input type="password" id="userpass" placeholder="  비밀번호">
-          <button class="loginbutton">로그인</button>
+          <button class="loginbutton">로그인</button>  
+        </div>
+        <div class="hr-div">
+          <div class="hr-div-inner"><hr></div>        
+          &nbsp;&nbsp;&nbsp;<span>또는</span>&nbsp;&nbsp;&nbsp;
+          <div class="hr-div-inner"><hr></div>
+        </div>
+        <div class="info-div">      
+          <button><img src="source/img/facebook.png" alt="facebook"><a>Facebook으로 로그인</a></button>
+          <span>비밀번호를 잊으셨나요?</span>
         </div>
       </div>
-      <div class="info-div">
-      <span>비밀번호를 잊으셨나요?</span>
+      <div class="body-right-second">
+        <span>계정이 없으신가요?</span>&nbsp;<a>가입하기</a>
+      </div>
+      <div class="body-right-third">
+        <span>앱을 다운로드하세요.</span>
+      </div>
+      <div class="body-right-four">
+        <img src="source/img/AppDown.png" alt="logo" class="download">
+        <img src="source/img/playDown.png" alt="logo" class="download">
       </div>
     </div>
-  </div>
+  </main>
+  <footer>
+    <div class="footer-left">
+      <a>소개</a><a>도움말</a><a>홍보 센터</a><a>API</a><a>채용 정보</a>
+      <a>개인정보처리방침</a><a>약관</a><a>위치</a><a>인기 계정</a><a>해시태그</a><a>언어</a>
+    </div>
+    <div class="footer-right"><span>© 2020 INSTAGRAM FROM FACEBOOK</span></div>
+  </footer>
   <script src="source/js/login.js"></script>
 </body>
 </html>

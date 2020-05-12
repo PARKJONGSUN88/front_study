@@ -34,6 +34,11 @@ nav {
   border-radius:0.2em;
   width: 16em;
   height: 2.2em;
+  text-align:center;
+}
+
+input::placeholder {
+  color: rgba(181, 181, 181, 1);
 }
 
 .menu-div {

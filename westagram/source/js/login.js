@@ -4,5 +4,7 @@ addEventListener('keyup', function() {
 
     if (idcheck.length !== 0 && passcheck.length !== 0) {
         document.getElementsByClassName("loginbutton")[0].classList.add("afterbutton");            
+    } else {
+        document.getElementsByClassName("loginbutton")[0].classList.remove("afterbutton");
     }
 });
