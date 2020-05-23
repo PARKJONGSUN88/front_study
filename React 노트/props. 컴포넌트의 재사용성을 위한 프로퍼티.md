@@ -1,0 +1,70 @@
+## props
+
+#### props. 컴포넌트의 재사용성을 위한 자식에게 부모의 아이템을 전달하기 위한 프로퍼티
+
+```jsx
+//main.js //부모 js파일
+render() {
+    this.state = {
+      name:"s",
+    ]
+    
+    return (
+      <article>
+          <CommentList comment={this.state.comment} />         
+          <CommentInput inputProps={this.fetFunc} name={this.state.name} />
+      </article>
+    )
+  }
+
+//commentInput.js //자식 js파일
+ render() {
+    return(
+      <div className="comment-write-div" onKeyDown={this.enterAndComment.bind(this)}>
+        <input type="text" placeholder="댓글 달기..." onChange={this.commentHandler.bind(this)} value={this.state.text}/>
+        <button type="submit" className={this.state.TextValidateCheck?"clickbutton":"submitButton"} onClick={this.buttonCilck.bind(this)}>게시</button>
+      </div>  
+    )
+  }
+```
+
+ ```commentList```, ```commentInput```라고 컴포넌트를 만들었다.
+
+ ```commentList```의 역할을 받아온 데이터를 보여줄 output 공간이다.
+
+ ```commentInput```의 역할은 데이터를 input받을 공간이다.
+
+
+
+여기서 props는 컴포넌트 옆에 달린 것들이다. 
+우선 컴포넌트를 알아야된다. 
+
+**기존에 존재하는 태그명이 아닌, 사용자가 이름을 지정한 내가 만들 이름의 태그같이 사용할 수 있는 것이 컴포넌트인것이다.**
+
+
+
+**props란** 
+
+```jsx
+<CommentInput inputProps={this.fetFunc} name={this.state.name} />
+```
+
+**에서** 
+
+```jsx
+inputProps={this.fetFunc}
+```
+
+**가 props이다.**
+
+
+
+여기서 사용자가 지정한 주고싶은 props 이름인 ```inputProp```로 중괄호안에 줄 부모가 전달해줄 요소를 보내는 것이다.
+
+
+
+prop로 보낼 수 있는 것들은 부모의 **state, 변수, 함수**까지 다양하다.
+```jsx
+inputProps={this.fetFunc} //부모가 사용하는 함수를 자식요소에서도 사용하려고 props로 전달했다.
+name={this.state.name} //부모가 가지고 있던 state값중 하나를 자식도 사용하려고 props로 전달했다.
+```
