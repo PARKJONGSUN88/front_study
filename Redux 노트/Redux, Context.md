@@ -1,0 +1,41 @@
+## Redux, Context
+
+전역 상태관리 라이브러리. 전역상태관리란 말 그대로 상태(state) 관리를 전역(grobal)으로 한다는 것
+
+<br>
+
+### 전역상태관리의 필요성
+
+![1](https://user-images.githubusercontent.com/50945715/89034878-cef43780-d374-11ea-924b-a290b1ea78e5.png)
+
+멀리 떨어진 곳의 컴포넌트의 상태값을 변경하기 위해서는 상위컴포넌트를 통해서만, 굉장히 불필요한 렌더가 필요할 수 있다. 심지어 중간에 있는 컴포넌트들을 통하여지만 가능할 수 있다. props는 읽기 전용이므로, 데이터는 위에서 아래로만 흐르기때문이다.
+
+![2](https://user-images.githubusercontent.com/50945715/89034883-cf8cce00-d374-11ea-8594-2b971dbc59a2.png)
+
+리덕스를 통하여 우리가 원하는 컴포넌트에 원하는 상태값을 외부의 스토어를 통해 직접적으로 가져오고 주입할 수 있게 된다.
+
+<br>
+
+### Redux와 Context
+
+context는 hook같이 react에서 공식적으로 제공해주는 전역 상태 관리 방법이다. 
+
+redux는 react뿐 아니라 vue, AngularJS 에서도 쓸 수있는 별도의 전역 상태 관리 라이브러리임.
+
+상태관리라이브러리는 이 외에도 존재한다. 
+
+<br>
+
+#### 장단점
+
+context - 가볍다, redux보다 조금 더 쉽게 구현할 수 있다. 데이터가 커지면 버벅일 수 있다.
+
+redux - 조금더 제공하는 유틸리티가 많고 유용함. 그만큼 무거울 수 있다. 
+
+<br>
+
+참고: https://chatoo2412.github.io/javascript/react/react-context-as-a-state-management-tool/ 
+
+참고: https://edykim.com/ko/post/learn-react-before-using-redux/ 
+
+
