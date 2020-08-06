@@ -1,4 +1,4 @@
-## styled-component
+## styled-component에 대하여
 
 스타일을 컴포넌트화한다.
 
